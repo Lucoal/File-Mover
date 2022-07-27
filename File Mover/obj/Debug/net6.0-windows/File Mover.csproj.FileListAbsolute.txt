@@ -32,3 +32,4 @@ E:\visual studio git repos\File-Mover\File Mover\obj\Debug\net6.0-windows\refint
 E:\visual studio git repos\File-Mover\File Mover\obj\Debug\net6.0-windows\File Mover.pdb
 E:\visual studio git repos\File-Mover\File Mover\obj\Debug\net6.0-windows\File Mover.genruntimeconfig.cache
 E:\visual studio git repos\File-Mover\File Mover\obj\Debug\net6.0-windows\ref\File Mover.dll
+E:\visual studio git repos\File-Mover\File Mover\obj\Debug\net6.0-windows\File_Mover.Properties.Resources.resources
