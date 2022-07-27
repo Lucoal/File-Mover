@@ -9,7 +9,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>FileMoverIcon.ico</ApplicationIcon>
     <Version>1.1.0</Version>
-    <Authors>$(AssemblyName)</Authors>
     <Company>Lucoal</Company>
   </PropertyGroup>
 
