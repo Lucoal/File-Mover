@@ -1,0 +1,18 @@
+E:\visual studio git repos\File-Mover\File Mover\bin\Release\net6.0-windows\File Mover.exe
+E:\visual studio git repos\File-Mover\File Mover\bin\Release\net6.0-windows\File Mover.deps.json
+E:\visual studio git repos\File-Mover\File Mover\bin\Release\net6.0-windows\File Mover.runtimeconfig.json
+E:\visual studio git repos\File-Mover\File Mover\bin\Release\net6.0-windows\File Mover.dll
+E:\visual studio git repos\File-Mover\File Mover\bin\Release\net6.0-windows\File Mover.pdb
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.csproj.AssemblyReference.cache
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File_Mover.Form1.resources
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File_Mover.Properties.Resources.resources
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.csproj.GenerateResource.cache
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.GeneratedMSBuildEditorConfig.editorconfig
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.AssemblyInfoInputs.cache
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.AssemblyInfo.cs
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.csproj.CoreCompileInputs.cache
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.dll
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\refint\File Mover.dll
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.pdb
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\File Mover.genruntimeconfig.cache
+E:\visual studio git repos\File-Mover\File Mover\obj\Release\net6.0-windows\ref\File Mover.dll
