@@ -11,6 +11,7 @@ namespace File_Mover
 
         public string fileName = "";
 
+        //scelta sorgente
         private void btnOpen_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -22,6 +23,7 @@ namespace File_Mover
             }
         }
 
+        //scelta destinazione
         private void btnOpen2_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
