@@ -17,6 +17,7 @@ namespace File_Mover
             int nWidthEllipse,
             int nHeightEllipse
             );
+
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace File_Mover
         }
 
         public string fileName = "";
+        private Form activeForm;
 
         //scelta sorgente
         private void btnOpen_Click(object sender, EventArgs e)
@@ -88,6 +90,7 @@ namespace File_Mover
 
 
         //borderless window draggable
+        /*
         bool mouseDown;
         private Point offset;
         private void mouseDown_Event(object sender, MouseEventArgs e)
@@ -99,18 +102,61 @@ namespace File_Mover
 
         private void mouseMove_Event(object sender, MouseEventArgs e)
         {
-            if (mouseDown == true)
-            {
-                Point currentScreenPos = PointToScreen(e.Location);
-                Location = new Point(currentScreenPos.X - offset.X, currentScreenPos.Y - offset.Y);
-            }
+
         }
 
         private void mouseUp_Event(object sender, MouseEventArgs e)
         {
             mouseDown = false;
         }
+        */
+        //Drag form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
 
-     
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+
+        private void mouseDown_Event(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        
+        //child form
+        private void OpenChildForm(Form childForm, object btnSender)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panelDesktopPane.Controls.Add(childForm);
+            this.panelDesktopPane.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        
+
+        private void aboutButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormAbout(), sender);
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            
+        }
+
+        
     }
 }

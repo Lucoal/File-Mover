@@ -40,8 +40,12 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.TitleMenuPanel = new System.Windows.Forms.Panel();
+            this.aboutButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.TitleMenuPanel.SuspendLayout();
+            this.panelDesktopPane.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(28, 57);
+            this.label1.Location = new System.Drawing.Point(25, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 14);
             this.label1.TabIndex = 0;
@@ -60,7 +64,7 @@
             this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpen.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnOpen.Location = new System.Drawing.Point(465, 54);
+            this.btnOpen.Location = new System.Drawing.Point(462, 20);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(75, 24);
             this.btnOpen.TabIndex = 1;
@@ -70,7 +74,7 @@
             // 
             // fromPath
             // 
-            this.fromPath.Location = new System.Drawing.Point(75, 54);
+            this.fromPath.Location = new System.Drawing.Point(72, 20);
             this.fromPath.Name = "fromPath";
             this.fromPath.PlaceholderText = "Select a file to move...";
             this.fromPath.ReadOnly = true;
@@ -82,7 +86,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label2.Location = new System.Drawing.Point(31, 104);
+            this.label2.Location = new System.Drawing.Point(28, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 14);
             this.label2.TabIndex = 3;
@@ -90,7 +94,7 @@
             // 
             // toPath
             // 
-            this.toPath.Location = new System.Drawing.Point(75, 101);
+            this.toPath.Location = new System.Drawing.Point(72, 67);
             this.toPath.Name = "toPath";
             this.toPath.PlaceholderText = "Select destination folder...";
             this.toPath.ReadOnly = true;
@@ -102,7 +106,7 @@
             this.btnOpen2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpen2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnOpen2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnOpen2.Location = new System.Drawing.Point(465, 101);
+            this.btnOpen2.Location = new System.Drawing.Point(462, 67);
             this.btnOpen2.Name = "btnOpen2";
             this.btnOpen2.Size = new System.Drawing.Size(75, 24);
             this.btnOpen2.TabIndex = 5;
@@ -115,7 +119,7 @@
             this.btnSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSwitch.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSwitch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnSwitch.Location = new System.Drawing.Point(224, 143);
+            this.btnSwitch.Location = new System.Drawing.Point(221, 109);
             this.btnSwitch.Name = "btnSwitch";
             this.btnSwitch.Size = new System.Drawing.Size(88, 24);
             this.btnSwitch.TabIndex = 6;
@@ -128,7 +132,7 @@
             this.btnMove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMove.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnMove.Location = new System.Drawing.Point(465, 143);
+            this.btnMove.Location = new System.Drawing.Point(462, 109);
             this.btnMove.Name = "btnMove";
             this.btnMove.Size = new System.Drawing.Size(75, 24);
             this.btnMove.TabIndex = 7;
@@ -143,7 +147,7 @@
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.exitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.exitButton.Location = new System.Drawing.Point(530, 2);
+            this.exitButton.Location = new System.Drawing.Point(530, 5);
             this.exitButton.Margin = new System.Windows.Forms.Padding(0);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(24, 24);
@@ -159,7 +163,7 @@
             this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minimizeButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.minimizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.minimizeButton.Location = new System.Drawing.Point(503, 2);
+            this.minimizeButton.Location = new System.Drawing.Point(503, 5);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(24, 24);
             this.minimizeButton.TabIndex = 9;
@@ -170,28 +174,72 @@
             // TitleMenuPanel
             // 
             this.TitleMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.TitleMenuPanel.Controls.Add(this.aboutButton);
+            this.TitleMenuPanel.Controls.Add(this.homeButton);
             this.TitleMenuPanel.Controls.Add(this.label3);
             this.TitleMenuPanel.Controls.Add(this.minimizeButton);
             this.TitleMenuPanel.Controls.Add(this.exitButton);
             this.TitleMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TitleMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.TitleMenuPanel.Name = "TitleMenuPanel";
-            this.TitleMenuPanel.Size = new System.Drawing.Size(574, 29);
+            this.TitleMenuPanel.Size = new System.Drawing.Size(574, 35);
             this.TitleMenuPanel.TabIndex = 10;
             this.TitleMenuPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown_Event);
-            this.TitleMenuPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove_Event);
-            this.TitleMenuPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mouseUp_Event);
+            // 
+            // aboutButton
+            // 
+            this.aboutButton.FlatAppearance.BorderSize = 0;
+            this.aboutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.aboutButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.aboutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.aboutButton.Location = new System.Drawing.Point(245, 3);
+            this.aboutButton.Name = "aboutButton";
+            this.aboutButton.Size = new System.Drawing.Size(85, 29);
+            this.aboutButton.TabIndex = 12;
+            this.aboutButton.Text = "About";
+            this.aboutButton.UseVisualStyleBackColor = true;
+            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
+            // 
+            // homeButton
+            // 
+            this.homeButton.FlatAppearance.BorderSize = 0;
+            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeButton.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.homeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.homeButton.Location = new System.Drawing.Point(155, 3);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(85, 29);
+            this.homeButton.TabIndex = 11;
+            this.homeButton.Text = "Home";
+            this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label3.Location = new System.Drawing.Point(28, 3);
+            this.label3.Location = new System.Drawing.Point(28, 4);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 23);
             this.label3.TabIndex = 10;
             this.label3.Text = "File Mover";
+            // 
+            // panelDesktopPane
+            // 
+            this.panelDesktopPane.Controls.Add(this.btnMove);
+            this.panelDesktopPane.Controls.Add(this.btnSwitch);
+            this.panelDesktopPane.Controls.Add(this.btnOpen2);
+            this.panelDesktopPane.Controls.Add(this.toPath);
+            this.panelDesktopPane.Controls.Add(this.label2);
+            this.panelDesktopPane.Controls.Add(this.fromPath);
+            this.panelDesktopPane.Controls.Add(this.btnOpen);
+            this.panelDesktopPane.Controls.Add(this.label1);
+            this.panelDesktopPane.Location = new System.Drawing.Point(3, 35);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(571, 147);
+            this.panelDesktopPane.TabIndex = 11;
+            this.panelDesktopPane.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown_Event);
             // 
             // Form1
             // 
@@ -200,26 +248,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(574, 184);
             this.Controls.Add(this.TitleMenuPanel);
-            this.Controls.Add(this.btnMove);
-            this.Controls.Add(this.btnSwitch);
-            this.Controls.Add(this.btnOpen2);
-            this.Controls.Add(this.toPath);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.fromPath);
-            this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelDesktopPane);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "File Mover";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown_Event);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove_Event);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mouseUp_Event);
             this.TitleMenuPanel.ResumeLayout(false);
             this.TitleMenuPanel.PerformLayout();
+            this.panelDesktopPane.ResumeLayout(false);
+            this.panelDesktopPane.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -237,5 +276,8 @@
         private Button minimizeButton;
         private Panel TitleMenuPanel;
         private Label label3;
+        private Button aboutButton;
+        private Button homeButton;
+        private Panel panelDesktopPane;
     }
 }
