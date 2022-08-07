@@ -8,8 +8,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>FileMoverIcon.ico</ApplicationIcon>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Authors>Lucoal</Authors>
+    <SignAssembly>False</SignAssembly>
+    <Product></Product>
+    <PackageId></PackageId>
+    <AssemblyName>FileMover</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
