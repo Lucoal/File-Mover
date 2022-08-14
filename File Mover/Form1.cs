@@ -48,29 +48,32 @@ namespace File_Mover
                 toPath.Text = fbd.SelectedPath;
             }
         }
-
+        
         private void btnSwitch_Click(object sender, EventArgs e)
         {
-            if(toPath.Text != "")
+            if (fromPath.Text == "") MessageBox.Show("Initial path is null", "Alert");
+            else
             {
-                if (toPath.Text.EndsWith("\\"))
+                if (toPath.Text != "")
                 {
-                    string temp = toPath.Text + fileName;
-                    toPath.Text = Path.GetDirectoryName(fromPath.Text);
-                    fromPath.Text = temp;
+                    if (toPath.Text.EndsWith("\\"))
+                    {
+                        string temp = toPath.Text + fileName;
+                        toPath.Text = Path.GetDirectoryName(fromPath.Text);
+                        fromPath.Text = temp;
+                    }
+                    else
+                    {
+                        string temp = $"{toPath.Text}\\{fileName}";
+                        toPath.Text = Path.GetDirectoryName(fromPath.Text);
+                        fromPath.Text = temp;
+                    }
                 }
                 else
                 {
-                    string temp = $"{toPath.Text}\\{fileName}";
-                    toPath.Text = Path.GetDirectoryName(fromPath.Text);
-                    fromPath.Text = temp;
-                } 
-            }
-            else
-            {
-                MessageBox.Show("Destination path is null", "Alert");
-            }
-            
+                    MessageBox.Show("Destination path is null", "Alert");
+                }
+            } 
         }
 
         
