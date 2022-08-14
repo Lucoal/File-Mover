@@ -53,9 +53,18 @@ namespace File_Mover
         {
             if(toPath.Text != "")
             {
-                string temp = $"{toPath.Text}\\{fileName}";
-                toPath.Text = Path.GetDirectoryName(fromPath.Text);
-                fromPath.Text = temp;
+                if (toPath.Text.EndsWith("\\"))
+                {
+                    string temp = toPath.Text + fileName;
+                    toPath.Text = Path.GetDirectoryName(fromPath.Text);
+                    fromPath.Text = temp;
+                }
+                else
+                {
+                    string temp = $"{toPath.Text}\\{fileName}";
+                    toPath.Text = Path.GetDirectoryName(fromPath.Text);
+                    fromPath.Text = temp;
+                } 
             }
             else
             {
